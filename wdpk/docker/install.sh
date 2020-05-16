@@ -85,7 +85,7 @@ sleep 3
 # install portainer to manage docker, only if there is no container Portainer (running or not)
 docker ps -a | grep portainer
 if [ $? = 1 ]; then
-    docker run -d -p 9000:9000 --restart always \
+    docker run -d -p 9000:9002 --restart always \
                -v /var/run/docker.sock:/var/run/docker.sock \
                -v $(readlink -f ${APKG_PATH})/portainer:/data portainer/portainer
 fi

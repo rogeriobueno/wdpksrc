@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "APKG_DEBUG: starting Docker and Portainer on port 9000" >> /tmp/debug_apkg
+echo "APKG_DEBUG: starting Docker and Portainer on port 9002" >> /tmp/debug_apkg
 
 APPDIR=$1
 LOG=/tmp/debug_apkg
